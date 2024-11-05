@@ -116,7 +116,7 @@ const basicCalculator = (num1, num2, operator) =>
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
-// Exercise 10
+// Exercise 10//
 const calculateGrade = (Score) =>
 {
     if(Score>=90 && Score<=100)
@@ -147,10 +147,8 @@ console.log('Exercise 10 Result:', calculateGrade(85));
 // Exercise 11
 const createUsername = (fName, lName) =>
 {
-    let s=fName.substring(0, 3);
-    let s1=lName.substring(0,3);
-    let count= fName.length+lName.length;
-    return `${s+s1+count}`;
+
+    return `${fName.substring(0,3)+lName.substring(0,3)+(fName.length+lName.length)}`;
 }
 
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
